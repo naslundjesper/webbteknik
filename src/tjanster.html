@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjänster - Malå Skogstjänst</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="assets/logoblack.png" alt="Malå Skogstjänst">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Varför oss?</a></li>
+      <li><a href="butik.html">Butik</a></li>
+      <li><a href="tjanster.html">Tjänster</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger-menu" id="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</header>
+
+<main>
+  <!-- Första sida -->
+  <div class="rubrik">
+    <h1> Service, underhåll <br> och innovationer</h1>
+    <h3>TIll skog, gruv och industriföretag runtom landet</h3>
+  </div>
+
+  <!-- Skogstjänst -->
+  <div class="skog">
+    <img src="assets/skogservice.jpg" alt="skogservice">
+    <div class="text">
+      <h1> SERVICE TILL SKOGSFÖRETAG </h1>
+      <p> Vi erbjuder service och reparationer av skogs- och jordbruksmaskiner –
+        allt från innovation till servicearbete direkt i din vardag.
+        En specialitet är tillverkning av lastutrymmen till olika fabrikat.
+        Vi monterar maskiner, servar och reparerar Stihl-produkter och hjälper till med slangbyten.</p>
+      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+    </div>
+  </div>
+
+  <!-- Gruvtjänst -->
+  <div class="gruv">
+    <div class="text">
+      <h1> SERVICE TILL GRUVINDUSTRIN </h1>
+      <p> Vi har djup kunskap inom service, underhåll och
+        tillverkning av exempelvis borrplattformar.
+        Som verkstadsföretag löser vi problem och bistår med
+        kundanpassad tillverkning av produkter.</p>
+      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+    </div>
+    <img src="assets/gruvservice.jpg" alt="gruvservice">
+  </div>
+
+  <!-- Industritjänst -->
+  <div class="industri">
+    <img src="assets/industriservice.jpg" alt="industriservice">
+    <div class="text">
+      <h1> SERVICE TILL INDUSTRIFÖRETAG</h1>
+      <p> Vi står till tjänst med specialbyggen, entreprenad-
+        och ritningstjänster. Vi byter och servar transportband
+        och tillhandahåller professionella CAD-tjänster.
+        Prata med oss om våra förmånliga service- och underhållsavtal.</p>
+      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+    </div>
+  </div>
+
+
+</main>
+
+<!-- Bakgrunden som ska suddas ut när menyn öppnas -->
+<div class="menu-overlay" id="menu-overlay">
+
+  <!-- Navigationsmeny -->
+  <nav class="menu-content">
+    <ul>
+      <!-- Huvudmeny: "Varför oss?" -->
+      <li>
+        <a href="#">Varför oss?</a>
+        <ul>
+          <li><a href="#">Recensioner</a></li>
+        </ul>
+      </li>
+      <!-- Huvudmeny: "Butik" -->
+      <li>
+        <a href="#">Butik</a>
+        <ul>
+          <li><a href="#">Karta</a></li>
+        </ul>
+      </li>
+      <!-- Huvudmeny: "Tjänster" -->
+      <li>
+        <a href="#">Tjänster</a>
+        <ul>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="contact-info">
+      <p>Email: info@malaskogstjanst.se</p>
+      <p>Telefon: 0953-344 44</p>
+      <p>Adress: Industrivägen 14, 93931 Malå, Sweden</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 Malå Skogstjänst. Alla rättigheter reserverade.</p>
+  </div>
+</footer>
+</body>
+</html>
