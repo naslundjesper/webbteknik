@@ -30,11 +30,11 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.05); /* Transparent bakgrund */
-    position: fixed; /* Fixera headern så att den alltid är längst upp */
-    top: 0; /* Placera headern högst upp på sidan */
-    width: 100%; /* Headern täcker hela bredden */
-    z-index: 100; /* Se till att headern ligger ovanpå andra element */
+    background-color: rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 
@@ -220,7 +220,7 @@ body#index .hamburger-menu .bar {
 .skog img {
     width: 400px;                /* Justera bildens storlek */
     height: auto;                /* Bevarar bildens proportioner */
-    margin-right: 200px;          /* Ger avstånd mellan bild och text */
+    margin-right: 150px;          /* Ger avstånd mellan bild och text */
 }
 
 .skog .text {
@@ -238,7 +238,7 @@ body#index .hamburger-menu .bar {
 .gruv img {
     width: 400px;                /* Justera bildens storlek */
     height: auto;                /* Bevarar bildens proportioner */
-    margin-left: 200px;          /* Ger avstånd mellan bild och text */
+    margin-left: 150px;          /* Ger avstånd mellan bild och text */
 }
 
 .gruv .text {
@@ -257,7 +257,7 @@ body#index .hamburger-menu .bar {
 .industri img {
     width: 400px;                /* Justera bildens storlek */
     height: auto;                /* Bevarar bildens proportioner */
-    margin-right: 200px;          /* Ger avstånd mellan bild och text */
+    margin-right: 150px;          /* Ger avstånd mellan bild och text */
 }
 
 .industri .text {
@@ -395,3 +395,43 @@ footer .copyright {
     margin-top: 20px;
     font-size: 12px;
 }
+
+@media print {
+    body {
+        font-size: 12px;
+        color: black;
+        background: none;
+    }
+
+    .hero, header, footer, .menu-overlay {
+        display: none; /* Dölj onödiga element vid utskrift */
+    }
+
+    .content, section {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+    }
+
+    .skog .text {
+        margin-right: 50px;
+    }
+
+    .gruv .text {
+        margin-left: 50px;
+    }
+
+    .industri .text {
+        margin-right: 50px;
+    }
+}
+
+
+
