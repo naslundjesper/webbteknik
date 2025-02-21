@@ -50,7 +50,13 @@ nav {
     transform: translateX(-50%);
 }
 
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid #45a049;
+}
+
 nav ul {
+    margin-top: -10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,10 +79,6 @@ nav a {
     font-size: 18px;
 }
 
-body#index nav a:hover {
-    color: #45a049;
-}
-
 nav a:hover {
     color: #45a049;
 }
@@ -87,11 +89,11 @@ nav a:hover {
     left: 10%;
     transform: translateY(-50%);
     color: white;
-    max-width: 500px;
+    max-width: 350px;
     z-index: 0; /* Se till att texten ligger framför videon men bakom headern */
 }
 
-.hero-content h1 {
+.hero-text {
     font-family: 'Satisfy', sans-serif;
     font-style: italic;
     font-weight: normal;
