@@ -403,7 +403,7 @@ footer .copyright {
         background: none;
     }
 
-    .hero, header, footer, .menu-overlay {
+    header, footer, .menu-overlay {
         display: none; /* Dölj onödiga element vid utskrift */
     }
 
