@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.getElementById("hamburger-menu");
     const menuOverlay = document.getElementById("menu-overlay");
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             link.classList.add("active");
         }
     });
+
 });
 
 

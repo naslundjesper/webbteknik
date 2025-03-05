@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="jquery.js"></script>
   <script src="main.js"></script>
 </head>
 
@@ -37,44 +40,54 @@
   </div>
 
   <!-- Skogstjänst -->
-  <div class="skog">
-    <img src="assets/skogservice.jpg" alt="skogservice">
-    <div class="text">
-      <h1> SERVICE TILL SKOGSFÖRETAG </h1>
-      <p> Vi erbjuder service och reparationer av skogs- och jordbruksmaskiner –
-        allt från innovation till servicearbete direkt i din vardag.
-        En specialitet är tillverkning av lastutrymmen till olika fabrikat.
-        Vi monterar maskiner, servar och reparerar Stihl-produkter och hjälper till med slangbyten.</p>
-      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+  <div class = "fade-in">
+    <div class="skog">
+      <img src="assets/skogservice.jpg" alt="skogservice">
+      <div class="text">
+        <h1> SERVICE TILL SKOGSFÖRETAG </h1>
+        <p> Vi erbjuder service och reparationer av skogs- och jordbruksmaskiner –
+          allt från innovation till servicearbete direkt i din vardag.
+          En specialitet är tillverkning av lastutrymmen till olika fabrikat.
+          Vi monterar maskiner, servar och reparerar Stihl-produkter och hjälper till med slangbyten.</p>
+        <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+      </div>
     </div>
   </div>
 
   <!-- Gruvtjänst -->
-  <div class="gruv">
-    <div class="text">
-      <h1> SERVICE TILL GRUVINDUSTRIN </h1>
-      <p> Vi har djup kunskap inom service, underhåll och
-        tillverkning av exempelvis borrplattformar.
-        Som verkstadsföretag löser vi problem och bistår med
-        kundanpassad tillverkning av produkter.</p>
-      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+  <div class = "fade-in">
+    <div class="gruv">
+      <div class="text">
+        <h1> SERVICE TILL GRUVINDUSTRIN </h1>
+        <p> Vi har djup kunskap inom service, underhåll och
+          tillverkning av exempelvis borrplattformar.
+          Som verkstadsföretag löser vi problem och bistår med
+          kundanpassad tillverkning av produkter.</p>
+        <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+      </div>
+      <img src="assets/gruvservice.jpg" alt="gruvservice">
     </div>
-    <img src="assets/gruvservice.jpg" alt="gruvservice">
   </div>
 
   <!-- Industritjänst -->
-  <div class="industri">
-    <img src="assets/industriservice.jpg" alt="industriservice">
-    <div class="text">
-      <h1> SERVICE TILL INDUSTRIFÖRETAG</h1>
-      <p> Vi står till tjänst med specialbyggen, entreprenad-
-        och ritningstjänster. Vi byter och servar transportband
-        och tillhandahåller professionella CAD-tjänster.
-        Prata med oss om våra förmånliga service- och underhållsavtal.</p>
-      <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+  <div class = "fade-in">
+    <div class="industri">
+      <img src="assets/industriservice.jpg" alt="industriservice">
+      <div class="text">
+        <h1> SERVICE TILL INDUSTRIFÖRETAG</h1>
+        <p> Vi står till tjänst med specialbyggen, entreprenad-
+          och ritningstjänster. Vi byter och servar transportband
+          och tillhandahåller professionella CAD-tjänster.
+          Prata med oss om våra förmånliga service- och underhållsavtal.</p>
+        <button class="cta" onclick="window.location.href='kontakt.html';">Kontakta oss</button>
+      </div>
     </div>
   </div>
 
+  <!-- Tillbaka till toppen-knappen -->
+  <button id="scrollToTop">
+    <i class="fa fa-arrow-up"></i>
+  </button>
 
 </main>
 
